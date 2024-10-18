@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f1efe7;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 30px 20px;
+    text-align: left;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+a {
+    color: #c93100;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero-text {
+        width: 70%;
+        padding-right: 20px;
+    }
+    .hero-image {
+        width: 30%;
+    }
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 20px;
+    }
+    .hero-image img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: #1f0800;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p,
+footer a,
+footer span {
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
